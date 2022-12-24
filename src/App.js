@@ -6,8 +6,8 @@ import Cart from "./components/Cart/Cart";
 function App() {
   return (
     <Fragment>
-      <Header />
       <Cart />
+      <Header />
       <main>
         <Meals />
       </main>
