@@ -7,7 +7,6 @@ function App() {
   return (
     <Fragment>
       <Cart />
-      {/* Hussam */}
       <Header />
       <main>
         <Meals />
