@@ -5,9 +5,13 @@ import classes from './Cart.module.css'
 import CartItem from './CartItem'
 
 const Cart = (props) => {
-  const onAddItemHandler = (item) => {}
-  const onRemoveItemHandler = (id) => {}
   const cartCtx = useContext(CartContext)
+  const onAddItemHandler = (item) => {
+    cartCtx.addItem(item)
+  }
+  const onRemoveItemHandler = (id) => {
+    cartCtx.removeItem(id)
+  }
   const cartItems = (
     <ul className={classes['cart-items']}>
       {cartCtx.items.map((item) => (
